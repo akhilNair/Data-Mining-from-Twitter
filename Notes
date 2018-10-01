@@ -1,0 +1,22 @@
+Another challenge with Twitter is in the lack of structure in tweets. Tweets are restricted in character count, forcing users to condense their sentiments while still conveying the intended meaning. This leads to highly unstructured text that contains many abbreviations, some of which are unique to Twitter. They contain frequently misspelled words, colloquialisms, idioms, and metaphors that make automatic processing more difficult. For the task of mining for ADR mentions, these issues compound an already challenging problem. 
+To ensure that as much data as possible was obtained, we also used projected misspellings of drug names as keywords. The misspellings were created using a phonetic spelling filter that generates variants based on the phenomes of the correct spelling.13
+The annotated spans were mapped to UMLS concept IDs found in the lexicon
+
+1. Data mining from Twitter's Abott handle by generic name or brand name  
+	A. Sentence tokenizer()
+	B. Pre-processing
+		a. Remove adds
+		b. Remove text containing URLS
+		c. Data balance according to drugs
+	C. Binary Classification for tweets (ADR present in tweet or not)
+	D. Classification (Indication or Adverse Event)
+		(Manual filtering (eg. preceding terms like "helps" or "works" for indications) VS Machine learning classifiers )
+	E. Concept Extraction 
+		1.Lexicon Matching
+		( Apache Lucene for extraction of ADR Lexicon concepts, Databases --> (COSTART,SIDER,CDARD,MEDEFFECT))
+			a.Pre processing concepts
+			b. Lemmatization
+			c. Stopwords removal 
+			(Wordnet, Dragon toolkit)
+		2. Association Rule Mining
+		3. Conditional Random Fields (CRF's)
