@@ -2,7 +2,7 @@ Another challenge with Twitter is in the lack of structure in tweets. Tweets are
 To ensure that as much data as possible was obtained, we also used projected misspellings of drug names as keywords. The misspellings were created using a phonetic spelling filter that generates variants based on the phenomes of the correct spelling.13
 The annotated spans were mapped to UMLS concept IDs found in the lexicon
 
-1. Data mining from Twitter's Abott handle by generic name or brand name  
+1. Data mining from Twitter's ** handle by generic name or brand name  
 	A. Sentence tokenizer()
 	B. Pre-processing
 		a. Remove adds
