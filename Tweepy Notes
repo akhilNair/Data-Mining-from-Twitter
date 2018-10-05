@@ -1,5 +1,44 @@
 Tweepy API's
 
-1. **API.home_timeline([since_id][, max_id][, count][, page])**
+1. Get most 20 most recent tweets from home page
 
-    Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user’s friends. This is the           equivalent of /timeline/home on the Web.
+    API.home_timeline([since_id][, max_id][, count][, page]) 
+    
+    Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user’s friends. This is the equivalent of 
+    /timeline/home on the Web.           equivalent of /timeline/home on the Web.
+    
+    Parameters:	
+    since_id – Returns only statuses with an ID greater than (that is, more recent than) the specified ID.
+    max_id – Returns only statuses with an ID less than (that is, older than) or equal to the specified ID.
+    count – Specifies the number of statuses to retrieve.
+    page – Specifies the page of results to retrieve. Note: there are pagination limits.
+
+    
+    
+2. Get all tweets by tweet id
+
+    API.statuses_lookup(id[, include_entities][, trim_user][, map])
+    
+    Returns full Tweet objects for up to 100 tweets per request, specified by the id parameter.
+    
+    Parameters:	
+    id – A list of Tweet IDs to lookup, up to 100
+    include_entities – A boolean indicating whether or not to include [entities](https://dev.twitter.com/docs/entities) in the returned tweets. Defaults to False.
+    trim_user – A boolean indicating if user IDs should be provided, instead of full user information. Defaults to False.
+    map – A boolean indicating whether or not to include tweets that cannot be shown, but with a value of None. Defaults to False.
+    
+3. Get all tweets posted by user
+
+    API.user_timeline([id/user_id/screen_name][, since_id][, max_id][, count][, page])
+    
+    Returns the 20 most recent statuses posted from the authenticating user or the user specified. It’s also possible to request
+    another user’s timeline via the id parameter.
+    
+    Parameters:	
+    id – Specifies the ID or screen name of the user.
+    user_id – Specifies the ID of the user. Helpful for disambiguating when a valid user ID is also a valid screen name.
+    screen_name – Specifies the screen name of the user. Helpful for disambiguating when a valid screen name is also a user ID.
+    since_id – Returns only statuses with an ID greater than (that is, more recent than) the specified ID.
+    max_id – Returns only statuses with an ID less than (that is, older than) or equal to the specified ID.
+    count – Specifies the number of statuses to retrieve.
+    page – Specifies the page of results to retrieve. Note: there are pagination limits.
