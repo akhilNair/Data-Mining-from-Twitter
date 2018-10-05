@@ -1,0 +1,5 @@
+Tweepy API's
+
+1. **API.home_timeline([since_id][, max_id][, count][, page])**
+
+    Returns the 20 most recent statuses, including retweets, posted by the authenticating user and that user’s friends. This is the           equivalent of /timeline/home on the Web.
