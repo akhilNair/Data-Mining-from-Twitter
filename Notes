@@ -21,3 +21,8 @@ The annotated spans were mapped to UMLS concept IDs found in the lexicon
 				(Wordnet, Dragon toolkit)
 			2. Association Rule Mining
 			3. Sequence Labelling with Conditional Random Fields (CRF's) (ADRMine)
+			
+
+Python driver for MongoDb - Pymongo  http://ilearnasigoalong.blogspot.com/2013/10/efficient-techniques-for-fuzzy-and.html
+
+Separate classes for retry. 
