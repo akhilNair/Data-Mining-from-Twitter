@@ -87,3 +87,6 @@ Vect1 . Vect2 =  (x1 * x2) + (y1 * y2)
 Where cos(a) matches the x value and sin(a) the y value, for the first vector. etc. The only problem, is that x, y etc. are not exactly 
 the cos and sin values, for these values need to be read on the unit circle. That's where the denominator of the formula kicks in: by 
 dividing by the product of the lengh of these vectors, the x and y coordinates become normalized.
+
+*********************************************************************************************************************************
+https://www.knime.com/blog/sentiment-analysis-with-n-grams
